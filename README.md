@@ -1,6 +1,9 @@
+
 # skd-portfolio
 
 A personal portfolio built with React (JSX) and Tailwind CSS, bundled with Vite. This repo contains a small, well-organized single-page application showcasing experience, education, skills, and projects with static assets and modular components.
+
+Live demo: https://skdprofile.vercel.app
 
 ## Quick summary
 
