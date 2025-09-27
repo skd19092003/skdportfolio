@@ -2,6 +2,8 @@
 
 A personal portfolio built with React (JSX) and Tailwind CSS, bundled with Vite. This repo contains a small, well-organized single-page application showcasing experience, education, skills, and projects with static assets and modular components.
 
+## live - skdprofile.vercel.app
+
 ## Quick summary
 
 - Small React app scaffolded with Vite.
