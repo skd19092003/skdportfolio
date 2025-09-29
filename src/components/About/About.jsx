@@ -40,10 +40,10 @@ const About = () => {
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed text-justify indent-0">
             I am a Software developer with strong foundation in Data structures & Algorithms
-             and practical experience in Full-stack Web Development (MERN, Next.js) and
-              Unity-based XR/VR Development.
+             and practical experience in Full-stack Web Development (MERN, Next.js), Game
+            Development using Unity Game Engine & XR (VR Simulation) Development.
           </p>
           {/* Resume Button */}
           <a
