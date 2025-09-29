@@ -43,7 +43,7 @@ const About = () => {
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed text-justify indent-0">
             I am a Software developer with strong foundation in Data structures & Algorithms
              and practical experience in Full-stack Web Development (MERN, Next.js), Game
-            Development using Unity Game Engine & XR (VR Simulation) Development.
+            Development using Unity Engine & XR (VR Simulation).
           </p>
           {/* Resume Button */}
           <a
