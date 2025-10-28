@@ -11,7 +11,8 @@ const Navbar = () => {
   // Detect scroll and change navbar background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      // trigger after scrolling more than one full viewport height
+      setIsScrolled(window.scrollY > window.innerHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,7 +41,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300  px-[7vw] md:px-[7vw] lg:px-[20vw]  ${
-        isScrolled && "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+       isScrolled && "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
       }`}
 
     >
