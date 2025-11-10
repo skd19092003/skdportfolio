@@ -6,19 +6,8 @@ import { SiGmail } from "react-icons/si";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detect scroll and change navbar background
-  useEffect(() => {
-    const handleScroll = () => {
-      // trigger after scrolling more than one full viewport height
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  
   // Smooth scroll function
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
