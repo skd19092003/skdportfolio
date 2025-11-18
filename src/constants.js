@@ -45,7 +45,7 @@ import kvsLogo from './assets/education_logo/kvs-logo.png';
 import hirely from './assets/work_logo/hirely.avif';
 import cinevault from './assets/work_logo/cinevault.avif';
 import flappydragon from './assets/work_logo/flappydragon.avif';
-import funtalk from './assets/work_logo/gsap.svg';
+import funtalk from './assets/work_logo/funtalk.avif';
 
 
 
