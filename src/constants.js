@@ -185,7 +185,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Hirely",
+    title: "Hirely-Job Portal",
     description:
       "Built real-time job posting, saving, and application tracking with a modern UI using Tailwind, with Advanced filtering features including search by job title, location, and company. Integrated Remotive’s public remote jobs API to display thousands of external listings, implemented a 7-hour smart caching system to handle strict API rate limits efficiently (4 requests/day).",
     image: hirely,
@@ -195,7 +195,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "CineVault",
+    title: "CineVault-Movie Manager",
     description:
       "Developed CineVault, a comprehensive React-based movie discovery platform featuring advanced search with real-time filtering by genre, year, language, and streaming providers, along with personal movie management through local storage for watchlist, watched, and favorites lists, enabling seamless organization and tracking of movie preferences. Implemented Standout Innovative features like an Intelligent 'Lucky Wheel' Movie Randomizer with customizable filters and visual effects.",
     image: cinevault,
@@ -205,7 +205,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Flappy Dragon Game",
+    title: "Flappy Dragon-Flying Game",
     description:
       "FLAPPY DRAGON - A Unity-based 2D game where you control a dragon navigating through obstacles. deployed on WebGL for browser play. Features smooth controls, scoring, and sound effects for an engaging experience.",
     image: flappydragon,
