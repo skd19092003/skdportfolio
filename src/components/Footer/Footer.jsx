@@ -67,3 +67,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+/*{} (curly braces): In JSX, this means "embed a JavaScript expression here".
+ Everything inside {} is JavaScript code that runs and returns a value (usually JSX elements).
+
+[array of objects] (square brackets): This is a JavaScript array literal. 
+ Inside it, you have objects {} separated by commas.*/

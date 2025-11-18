@@ -10,16 +10,9 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_skd190903",  // EmailJS Service ID
-        "template_9nir70l",  //EmailJS Template ID
-        form.current,
-        "s_BnFyVR3fpRPiTCP"  // EmailJS Public Key
-      )
-      .then( 
-        () => {
+ 
+    emailjs.sendForm("service_skd190903","template_9nir70l", form.current,"s_BnFyVR3fpRPiTCP" )
+      .then( () => {
           setIsSent(true);
           form.current.reset(); // Reset form fields after sending
           toast.success("Message sent successfully! ✅", {
@@ -114,3 +107,45 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/* What is useRef?
+useRef is a React hook that creates a "ref" (reference) object.
+  This object has a (.current property) that can hold a reference to a DOM element (like an HTML tag) or any mutable value.
+Unlike state (useState), refs don't trigger re-renders when they change — they're for "side effects" or direct DOM manipulation.
+You import it from React: import { useRef } from "react";.
+In your code: form = useref();
+This creates a ref called form. Initially, form.current is undefined.
+
+When the component renders, form.current will be set to the actual <form> DOM element.*/
+
+/*What does ref={form} do?
+ref={form} is an attribute you add to a JSX element (like <form>).
+It "attaches" the ref to that element. After the component mounts, 
+
+form.current will point to the <form> DOM node in the browser.
+
+It's like giving React a direct pointer to the form element so you can interact with it outside of React's normal state/props flow.
+
+Why use it here?
+
+Your form uses EmailJS to send emails. EmailJS's sendForm method needs the actual form DOM element to read the input values 
+(name, email, message, etc.) and send them.
+
+(((((((((((form.current is passed to emailjs.sendForm(...) so EmailJS can access the form data.)))))))))))
+After sending, form.current.reset() clears the form fields (resets inputs to empty). */
+
+
+
+
+
+/*Step-by-step flow:
+Component renders: <form ref={form} ...> — form.current becomes the form DOM element.
+User fills form and clicks "Send".
+sendEmail runs: emailjs.sendForm(..., form.current, ...) — EmailJS reads data from the form.
+On success: form.current.reset() — clears the form.
+On error: Shows toast, but form stays filled.
+
+
+Without useRef/ref:
+You'd have to use controlled inputs (with useState for each field), collect the values manually, and pass them to EmailJS. It's more code and less efficient for forms.
+EmailJS prefers the DOM form for simplicity. */
