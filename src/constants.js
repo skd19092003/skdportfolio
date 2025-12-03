@@ -29,6 +29,7 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 import UnityLogo from './assets/tech_logo/unity-tab.png';
 import supabaseLogo from './assets/tech_logo/supabase (1).avif';
 import csharpLogo from './assets/tech_logo/csharp.avif';
+import AWSLogo from './assets/tech_logo/awslogo.png'
 
 
 
@@ -94,6 +95,17 @@ export const SkillsInfo = [
       { name: 'Netlify', logo: netlifyLogo },
       { name: 'Figma', logo: figmaLogo },
 
+    ],
+  },
+  {
+    title: 'AWS Cloud',
+    skills: [
+      { name: 'EC2', logo: AWSLogo },
+      { name: 'S3', logo: AWSLogo },
+      { name: 'RDS', logo: AWSLogo },
+      { name: 'DynamoDB', logo: AWSLogo },
+      { name: 'IAM', logo: AWSLogo },
+      { name: 'CloudFront', logo: AWSLogo },
     ],
   },
 ];
